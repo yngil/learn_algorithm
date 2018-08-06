@@ -45,13 +45,17 @@ public class QuickSort {
         _sort(array,i+1,right);
     }
 
+    public void display(int array[]){
+        for(int item : array){
+            System.out.printf(item+"\t");
+        }
+    }
+
     public static void main(String[] args) {
         int array[] = {7,1,3,6,2,9,4,8,5,10};
         QuickSort instance = new QuickSort();
         instance.sort(array);
-        for(int item : array){
-            System.out.printf(item+"\t");
-        }
+        instance.display(array);
     }
 
 }
